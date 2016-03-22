@@ -38,7 +38,6 @@ samples/healthgain = { "db":-2.0, "pitch":1.0, "sample":ExtResource( 11 ) }
 samples/killmonster = { "db":2.0, "pitch":1.0, "sample":ExtResource( 13 ) }
 samples/damage = { "db":-4.0, "pitch":1.0, "sample":ExtResource( 10 ) }
 
-
 [node name="world" type="Node2D"]
 
 script/script = ExtResource( 1 )
