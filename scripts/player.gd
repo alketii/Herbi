@@ -36,6 +36,10 @@ func animation_walk():
 	else:
 		get_node("sprites").set_frame(1)
 
+func animation_jump():
+	get_node("sprites").set_frame(1) # walking animation is fine for jumping, but this should be changed
+
+
 
 func _fixed_process(delta):
 	# Create forces
@@ -77,6 +81,9 @@ func _fixed_process(delta):
 			vlen = 0
 		
 		velocity.x = vlen*vsign
+	
+	if (jumping):
+		animation_jump()
 	
 	# Integrate forces to velocity
 	velocity += force*delta
